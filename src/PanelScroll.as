@@ -77,7 +77,7 @@ package
 			   
 			if(touch.phase == TouchPhase.MOVED )
 			{
-			  _container.x = _offsetX + position.x - _startX;
+				_container.x = _offsetX + position.x - _startX;
 			}
 			
 			if(touch.phase == TouchPhase.ENDED )
