@@ -18,7 +18,7 @@ package
 	public class PanelScroll extends Sprite 
 	{
 		private var _container:Sprite;
-		private var _panelBounds:Rectangle = new Rectangle(0, 0, 700, 456);
+		private var _panelBounds:Rectangle = new Rectangle(0, 0, 650, 400);
 		private var _currentPanelIndex:int = 0;
 		private var _panelCount:int;
 		private var position:Point;
@@ -47,13 +47,13 @@ package
 			
 			var q:Quad;
 			
-			_panelCount = 5;
+			_panelCount = 50;
 			
-			for(var i:uint = 0; i < 5; i++)
+			for(var i:uint = 0; i < 50; i++)
 			{
-				q = new Quad(600, 450);
+				q = new Quad(600, 400);
 				q.color = Math.random() * 0xFFFFFF;
-				q.x = i * _panelBounds.width;
+				q.x = i * 650;
 				q.y = 0;
 				_container.addChild(q);
 			}
