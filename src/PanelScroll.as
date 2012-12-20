@@ -82,7 +82,7 @@ package
 			
 			if(touch.phase == TouchPhase.ENDED )
 			{
-        this.removeEventListener(Event.ENTER_FRAME, onEnterFrame);
+        			this.removeEventListener(Event.ENTER_FRAME, onEnterFrame);
 
 				var elapsedTime:Number = (getTimer() - _t2) / 1000;
 				var xVelocity:Number = (position.x - _x2) / elapsedTime;
